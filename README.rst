@@ -32,3 +32,12 @@ You use ``cargo`` for arbitrary tasks:
    cargo build  # compile app
    cargo test   # run tests on your app
    cargo run    # run your awesome app
+
+Description
+===========
+
+This is a simple web application which displays random motivation quotes on every page reload. 
+
+It was developed during the `RustFest <http://2017.rustfest.eu/>`_ workshop held by 
+`@ashleygwilliams <https://github.com/ashleygwilliams/>`_ (`@ag_dubs <https://twitter.com/ag_dubs>`_ on Twitter).
+The original project can be found at: https://github.com/ashleygwilliams/rust-emergency-compliment.
