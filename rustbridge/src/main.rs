@@ -9,6 +9,8 @@ fn main() {
     let mut app = Pencil::new("./src");
 
     app.register_template("motivation.html");
+    app.enable_static_file_handling();
+
     app.get("/", "motivation", routes::motivation);
     app.get("/hello/<name:string>", "hello_name", routes::hello_name);
 
