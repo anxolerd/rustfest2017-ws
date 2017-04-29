@@ -2,17 +2,20 @@ extern crate pencil;
 extern crate pick_one;
 extern crate motivations;
 
-use pencil::{Request, PencilResult, Response};
+use pencil::{Request, PencilResult};
+use std::collections::BTreeMap;
 
 
-fn get_motivation() -> &'static str {
-    return pick_one::pick_one_str(&motivations::MOTIVATIONS);
+fn get_rand_motivation() -> String {
+    return pick_one::pick_one_str(&motivations::MOTIVATIONS).to_string();
 }
 
 
-pub fn motivation(_: &mut Request) -> PencilResult {
-    let motivation = get_motivation();
-    return Ok(Response::from(motivation));
+pub fn motivation(req: &mut Request) -> PencilResult {
+    let mut context = BTreeMap::new();
+    let motivation = get_rand_motivation();
+    context.insert("motivation".to_string(), motivation);
+    return req.app.render_template("motivation.html", &context);
 }
 
 
