@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Oleksandr Kovalchuk <anxolerd@outlook.com>"]
 
 [dependencies]
-pencil = "=0.3.0"
+pencil = { version = "=0.3.0", default-features = false }
