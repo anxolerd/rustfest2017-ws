@@ -29,5 +29,5 @@ fn main() {
     let mut app = Pencil::new("/web/hello");
     app.route("/", &[Get], "motivation", motivation);
     app.route("/hello/<name:string>", &[Get], "hello_name", hello_name);
-    app.run("0.0.0.0:5000");
+    app.run("0.0.0.0:7878");
 }
