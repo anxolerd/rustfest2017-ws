@@ -1,9 +1,11 @@
-fn say_hello(name: &str) -> String {
-    let message = format!("hello, {}!", name);
-    message
-}
+extern crate pencil;
+
+use pencil::Pencil;
+use pencil::{Request, PencilResult, Response};
+use pencil::method::Get;
 
 
 fn main() {
-    println!("{}", say_hello("Cthulhu"));
+    let mut app = Pencil::new("/web/hello");
+    app.run("0.0.0.0:5000");
 }
