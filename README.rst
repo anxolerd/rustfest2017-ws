@@ -15,6 +15,8 @@ Getting started
 
 Workshop slides: https://ashleygwilliams.github.io/a-very-brief-intro-to-rust
 
+You can parctice Rust on `Exercism <http://exercism.io>`_
+
 Setting up a project
 --------------------
 
