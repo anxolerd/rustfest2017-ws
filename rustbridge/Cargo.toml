@@ -6,3 +6,4 @@ authors = ["Oleksandr Kovalchuk <anxolerd@outlook.com>"]
 [dependencies]
 pencil = { version = "=0.3.0", default-features = false }
 motivations = "=1.1.2"
+pick-one = "=1.0.1"
